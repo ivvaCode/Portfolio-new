@@ -1,0 +1,859 @@
+body {
+  background-image: url(https://cdn.glitch.global/06820dff-8951-4c58-be4d-bbba9064497e/fon2.jpg?v=1706367631532);
+  background-size: cover ;
+    margin: 0px;
+    height: 100vh;
+    overflow-x: hidden;  
+}
+.firstList {
+  height: 100vh;  
+}
+.myName {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    
+    height: 150px ;
+    border-bottom: #C62368 2px solid ;
+}
+.myName > h1 {
+    color: #FA7268;
+    opacity: 0.9;
+    font-size: 100px;
+    font-weight:bold;
+    font-family: 'Noto Sans';
+    margin-top: 10px; 
+  align-items: center;
+}
+ .heading {
+    color: #C62368;
+    opacity: 0.8;
+  font-size: 50px; 
+  }
+  .myFoto {
+    margin: 30px 30px 30px 30px;
+  }
+
+.menu {   
+    height:20vh;
+}
+.links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    height: 100%;     
+}
+.link {
+    color: #C62368;
+    font-size: 40px;
+    font-weight: 900;
+    margin: 20px;
+    font-family: 'Noto Sans';
+    text-decoration: none;  
+}
+.link:hover {
+    color: #FA7268;
+    font-size: 50px;
+}
+.img {
+    display:flex;
+    justify-content: center;
+    filter: drop-shadow( 0 0 40px  #d4d0d0) ;   
+}
+/*Слайдер */
+
+.containerMain {
+    height: 100vh;
+    position: relative; 
+}
+.move {
+  color: #ffeddb;
+  font-size: 100px; 
+  margin: 0px;
+}
+ .h2-head {
+  color: #ffeddb;
+  opacity: 0.8;  
+  font-size: 50px;
+  margin-top: 0px;
+  }
+  .h2-enjoy {
+    color:  #FA7268;
+    font-size: 50px;
+    margin-left: 10%;
+  }
+/* ---- particles.js container ---- */
+  
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #FA7268;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  /* ---- stats.js ---- */
+  
+  .count-particles{
+    background: #002120;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 80px;
+    display: flex; 
+    line-height: 14px;
+    padding-bottom: 2px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+  }
+  #stats,
+  .count-particles{
+    -webkit-user-select: none;
+  }
+  #stats{
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+  }
+  
+  .count-particles{ 
+    display: flex;
+    justify-content: center;
+    background: none; 
+  }
+  .dark {
+    color: #001220;
+    align-items: center;
+  }
+  .darkness {
+    display: flex;
+    text-align: center;
+    background-color: #001220;
+  }
+  .light {
+color: #ffeddb;
+align-items: center;
+  }
+  .lightness {
+    display: flex;
+    text-align: center;
+    background-color: #ffeddb;
+  }
+  .header  {
+  opacity: 0;  
+  }
+  .p-light {
+    color:#FA7268;
+    font-size: 50px;
+ 
+  }
+  .p-dark {
+    color: #001220;
+    font-size: 50px;
+    opacity: 0.8;
+    
+  }
+  .one, .two, .three {
+   margin-top: 100px;
+   color: #ffeddb;
+   font-size: 50px;
+   opacity: 0.5;
+  } 
+  .right {
+    display: flex;
+    justify-content: center;
+    background-color: #001220;
+  }
+.go,.go-dark {
+color: #FA7268 ;
+text-decoration: none;
+}
+  
+.circle { 
+  filter: drop-shadow( 0 0 20px #fe5e66) ;
+  margin-left: -10%;
+}
+.figma {
+  color: #ffeddb;
+  text-decoration: underline;
+  }
+  
+/* Кнопка-ссылка на сайт*/
+
+ .btn { 
+  align-self: flex-end;
+  margin-bottom: 20px;
+  background-color: #001220;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 7px;
+  border: 3px solid #d53867;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+  
+  overflow: hidden;
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: all 0.2s ease-in;
+  -moz-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  width:200px;
+}
+
+.btn:hover {
+  background-image: url(https://cdn.glitch.global/06820dff-8951-4c58-be4d-bbba9064497e/breathtaking-view-clouds-morning-sky.jpg?v=1706365032502);
+  background-repeat: round;
+  box-shadow: 0 0 30px 5px #fe5e66;
+  -webkit-transition: all 0.2s ease-out;
+  -moz-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.btn:hover::before {
+  -webkit-animation: sh02 0.5s 0s linear;
+  -moz-animation: sh02 0.5s 0s linear;
+  animation: sh02 0.5s 0s linear;
+}
+.btn::before {
+  content: '';
+  display: block;
+  width: 0px;
+  height: 86%;
+  position: absolute;
+  top: 7%;
+  left: 0%;
+  opacity: 0;
+  background: #ffeddb;
+  box-shadow: 0 0 50px 30px #ffeddb;
+  -webkit-transform: skewX(-20deg);
+  -moz-transform: skewX(-20deg);
+  -ms-transform: skewX(-20deg);
+  -o-transform: skewX(-20deg);
+  transform: skewX(-20deg);
+}
+
+@keyframes sh02 {
+  from {
+    opacity: 0;
+    left: 0%;
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    left: 100%;
+  }
+}
+
+.btn:active {
+  box-shadow: 0 0 0 0 transparent;
+  -webkit-transition: box-shadow 0.2s ease-in;
+  -moz-transition: box-shadow 0.2s ease-in;
+  transition: box-shadow 0.2s ease-in;
+  margin-bottom: 30px;
+  background-color: #ffeddb;
+}
+
+.paragraph {
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  background-color: #001220;
+  border-top: 3px solid #ffeddb;
+  border-bottom: 3px solid #ffeddb;
+}
+#par {
+    color: #ef5f67;
+    font-size: 80px;
+    font-family: 'Noto Sans';    
+}
+  
+/* Slider */
+  @import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+  .container > * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  
+}
+
+.sidebar {
+  height: 100%;
+  width: 35%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.5s ease-in-out;
+}
+
+.sidebar > div {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #ffeddb;
+}
+
+.sidebar h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+  margin-top: -30px;
+}
+
+.main-slide {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 35%;
+  width: 65%;
+  transition: transform 0.5s ease-in-out;
+  
+}
+
+.main-slide > div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 100%;
+  width: 100%;
+  
+ 
+}
+
+button {
+  background-color: #ffeddb;
+  border: none;
+  color: #FA7268;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 15px;
+  border:#C62368 2px solid;
+  margin: 0;
+}
+
+button:hover {
+  color: #001220;
+}
+
+button:focus {
+  outline: none;
+}
+
+.container .controls button {
+  position: absolute;
+  left: 35%;
+  top: 50%;
+  z-index: 100;
+}
+
+.container .controls .down-button {
+  transform: translateX(-100%);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.container .controls .up-button {
+  transform: translateY(-100%);
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+
+/* ABOUT */
+.container-main-about {
+    height: max-content;
+    background-image: url(https://cdn.glitch.global/06820dff-8951-4c58-be4d-bbba9064497e/fon-vertical.jpg?v=1706367640909);
+    background-size: cover ;
+    border-top: 3px solid #ffeddb;
+    border-bottom: 3px solid #ffeddb;
+}
+.about {
+    display: flex;
+    flex-direction: column;
+    color:#001220;
+    font-family: 'Noto Sans';
+    
+}
+.header-about {
+    display: flex;
+    align-self: flex-start;
+    margin-left: 20%;
+    font-size: 40px; 
+   font-weight: bold; 
+   margin-top: 0px;
+   margin-bottom: 0px;
+   color:#ffeddb;
+}
+ .note {
+    border-radius: 50px;
+    align-self: flex-start;
+    width: 90%;
+    margin-left: 5%;
+    display: flex;
+    margin-top: 0px;
+ }
+.me {
+  color:#ffeddb;
+    margin-bottom: 20px;
+    font-family: 'Noto Sans';
+    font-size:30px; 
+    margin: 20px;  
+}
+.contact {
+    height: max-content;
+    font-family: 'Noto Sans';
+}
+.heading-about{
+  margin-left: 30px;
+}
+.a-about {
+    color: #ffeddb;
+    font-family: 'Noto Sans';
+}
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;   
+    font-family: 'Noto Sans';
+    margin-top: 20px;
+    margin-bottom: 20px;   
+}
+label {
+    align-items: flex-start;
+    margin: 20px;
+    font-size: 20px;
+}
+.text-input {
+    padding: 20px;
+    font-size: 20px;
+    margin: 10px;
+    border: none;
+    width:300px; 
+    background-color: #ffeddb; 
+    border-radius: 34px;
+}
+
+/* кнопка- блок about*/
+
+.button-about {
+    
+    padding: 20px 40px;
+    border-radius: 34px;
+    border: 3px solid #ffeddb;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 2px;
+    background-color: #001220;
+    color: #FA7268;
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: all 0.2s ease-in;
+    -moz-transition: all 0.2s ease-in;
+    transition: all 0.2s ease-in;
+    letter-spacing: 20px;
+    width: 35%;
+    margin-left: 50px;
+  }
+  
+  .button-about:hover {
+    background-image: url(https://cdn.glitch.global/06820dff-8951-4c58-be4d-bbba9064497e/breathtaking-view-clouds-morning-sky.jpg?v=1706365032502);
+    background-repeat: round;
+    box-shadow: 0 0 30px 5px #740901;
+    -webkit-transition: all 0.2s ease-out;
+    -moz-transition: all 0.2s ease-out;
+    transition: all 0.2s ease-out;
+    color: #001220;
+  }
+  
+  .button-about:hover::before {
+    -webkit-animation: sh02 0.5s 0s linear;
+    -moz-animation: sh02 0.5s 0s linear;
+    animation: sh02 0.5s 0s linear;
+  }
+  
+  .button-about::before {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 86%;
+    position: absolute;
+    top: 7%;
+    left: 0%;
+    opacity: 0;
+    background: #ffeddb;
+    box-shadow: 0 0 50px 30px #ffeddb;
+    -webkit-transform: skewX(-20deg);
+    -moz-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    -o-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+  }
+  
+  @keyframes sh02 {
+    from {
+      opacity: 0;
+      left: 0%;
+    }
+  
+    50% {
+      opacity: 1;
+    }
+  
+    to {
+      opacity: 0;
+      left: 100%;
+    }
+  }
+  
+  .button-about:active {
+    box-shadow: 0 0 0 0 transparent;
+    -webkit-transition: box-shadow 0.2s ease-in;
+    -moz-transition: box-shadow 0.2s ease-in;
+    transition: box-shadow 0.2s ease-in;
+    margin-bottom: 30px;
+    background-color: #ffeddb;
+  }
+ /* Страница контакты */
+
+.contacts {
+    background-image: url("https://cdn.glitch.global/06820dff-8951-4c58-be4d-bbba9064497e/Polygon.jpg?v=1706388771530");
+    background-size: cover; 
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    
+}
+.headerContacts {
+  color: #FA7268;
+  -webkit-text-stroke:  0.5px #ffeddb;
+  text-stroke: 0.5px #ffeddb;
+  opacity: 0.9;
+  font-size: 120px;
+  font-weight: 900;
+  margin-top: 5%;
+  margin-left: 5%;
+   
+  }
+
+  .callMe {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+ align-content: flex-start;
+ max-width: min-content;
+ margin-top: -100px;
+ margin-left: 5%;
+ height: 40%;
+ 
+  }
+  .tel {
+    padding: 20px;
+    font-family: 'Noto Sans';
+    font-size: 20px;
+    color: #ffeddb;
+    text-decoration: none;
+  
+  
+  }
+  .tel:hover {
+    font-size: 25px;
+    color:#001220;
+  }
+ buttonTwo {
+   position: relative;
+   padding: 10px 20px;
+   border-radius: 7px;
+   border: 2px solid #C62368;
+   font-size: 14px;
+   text-transform: uppercase;
+   font-weight: 600;
+   letter-spacing: 2px;
+   background-color: #ef5f67;
+   color: #ffeddb;
+   overflow: hidden;
+   box-shadow: 0 0 0 0 transparent;
+   -webkit-transition: all 0.2s ease-in;
+   -moz-transition: all 0.2s ease-in;
+   transition: all 0.2s ease-in;
+ }
+ 
+ buttonTwo:hover {
+   background-image: url(https://cdn.glitch.global/06820dff-8951-4c58-be4d-bbba9064497e/breathtaking-view-clouds-morning-sky.jpg?v=1706365032502);
+   background-repeat: round;
+   box-shadow: 0 0 30px 5px #f96f65;;
+   -webkit-transition: all 0.2s ease-out;
+   -moz-transition: all 0.2s ease-out;
+   transition: all 0.2s ease-out;
+ }
+ 
+ buttonTwo:hover::before {
+   -webkit-animation: sh02 0.5s 0s linear;
+   -moz-animation: sh02 0.5s 0s linear;
+   animation: sh02 0.5s 0s linear;
+ }
+ 
+ buttonTwo::before {
+   content: '';
+   display: block;
+   width: 0px;
+   height: 86%;
+   position: absolute;
+   top: 7%;
+   left: 0%;
+   opacity: 0;
+   background: #ffeddb;
+   box-shadow: 0 0 50px 30px #ffeddb;
+   -webkit-transform: skewX(-20deg);
+   -moz-transform: skewX(-20deg);
+   -ms-transform: skewX(-20deg);
+   -o-transform: skewX(-20deg);
+   transform: skewX(-20deg);
+ }
+ 
+ @keyframes sh02 {
+   from {
+     opacity: 0;
+     left: 0%;
+   }
+ 
+   50% {
+     opacity: 1;
+   }
+ 
+   to {
+     opacity: 0;
+     left: 100%;
+   }
+ }
+ 
+ buttonTwo:active {
+   box-shadow: 0 0 0 0 transparent;
+   -webkit-transition: box-shadow 0.2s ease-in;
+   -moz-transition: box-shadow 0.2s ease-in;
+   transition: box-shadow 0.2s ease-in;
+ }
+ 
+
+
+
+@media all and (max-width: 900px) {
+.myName {
+    height: 250px;
+  display: flex;
+  justify-content: center;
+}
+.myName > h1 {
+  display: flex;
+    font-size: 90px; 
+    align-items: center;
+}
+
+.link {
+    font-size: 40px;
+    font-weight: 600;
+    margin: 20px;
+    font-family: 'Noto Sans';
+    text-decoration: none;
+}
+  .myFoto {
+    margin-left: 30px;
+    margin-top: 120px;
+  }
+  
+ 
+/* ABOUT-900  */
+#par {
+    font-size:70px;
+
+  }
+  /* Contacts-900 */ 
+  
+  .headerContacts {
+    font-size: 120px;
+     font-weight: 300;
+     margin-top: 50px;
+   }
+ 
+   .callMe {
+     display: flex;
+     flex-direction: column; 
+     align-items: center; 
+  height: 40vh;
+ }
+ .tel {
+font-size: 30px; 
+align-self: center;
+ }
+ buttonTwo {
+   text-align: center;
+   width: 500px;
+ }
+ /* Slider-900  */
+.circle {
+    width: 150px;
+    height: 150px;
+}
+}
+
+
+
+
+@media all and (max-width: 500px) {
+    .myName > h1  {
+    font-size: 70px;
+    align-self: center;
+    margin: 20px;
+    text-align: center;
+    }
+    .links {
+        display: flex;
+        flex-direction: column;
+    }
+    .link {
+        font-size: 30px;
+        margin: 0;
+        
+    }
+   .myFoto {
+    margin: 80px  30px 30px;
+  }
+  #par {
+ font-size: 50px;
+      
+}
+/* Slider-500  */
+.circle {
+    width: 100px;
+    height: 100px;
+  margin-top: 100px;
+}
+ 
+  .h2-enjoy {
+    font-size: 35px;
+    margin-left: 2%;
+    text-align: none;
+  }
+  .dark, .light {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);   
+  }
+  .p-dark {
+    margin-top:50px;
+    font-size: 20px;
+  }
+  .p-light {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+  
+  .header {
+    margin-left: -670px;
+  }
+  .one, .two, .three {
+    opacity: 0;
+  }
+  
+
+/* ABOUT-500  */
+.main-about {
+    margin: 0;
+}
+.h2-about {
+    margin: 0;
+}
+#par {
+    font-size:70px;
+    margin-left: 30px;
+  }
+  .h1-about {
+    font-size: 35px;
+  }
+
+  .note {
+    width: 85%;
+    margin-left: 10px;
+    margin-right: 0;
+}
+.me {
+    margin-bottom: 10px;
+    font-size: 20px; 
+}
+.button-about {
+    width: 80%;
+  align-self: center;
+  margin-left: 0px;
+}
+  .heading-about{
+  margin-left: 0px; 
+    align-self: center;
+}
+  .text-input { 
+    margin: 10px;
+    width:70%; 
+}
+
+  
+  /* Contacts-500  */
+
+.contacts {
+   display:flex;
+    
+  }
+  .headerContacts {
+     margin: 50px 5px 50px   5px;
+    font-size: 70px;
+   text-align: center;
+    
+      
+  }
+  .callMe {
+    height: 30vh;
+    margin-top: -20px;
+    margin-left: 0;
+    align-self: center;
+  }
+  .tel {
+    font-size: 20px;
+    color: #393646;
+    
+  }
+  buttonTwo {
+    top: 40px;
+    text-align: center;
+    width: 320px;
+    color: #393646;
+  }
+
+  .move {
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
