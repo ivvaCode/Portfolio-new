@@ -2,7 +2,7 @@
 
 ## This site about me and my projects
 
-[![CyberForum.ru](Img-portfolio.png)](https://ivvacode-portfolio.netlify.app/ "Portfolio")
+[![Portfolio](Img-portfolio.png)](https://ivvacode-portfolio.netlify.app/ "Portfolio")
 
 > 
 > Ваша работа заполнит большую часть жизни и единственный способ быть
